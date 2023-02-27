@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(118, 185, 185);
+    font-size: 25px;
+    font-family: Courier;
+    border: 1px;
+    border-style: double;
+
+
+}
+
+.foto2 {
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+}
+
+.foto1 {
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(24, 116, 116);
+}
+
+.im {
+    background-color: rgb(24, 116, 116);
+    color: rgb(8, 8, 8);
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 1220px;
+}
