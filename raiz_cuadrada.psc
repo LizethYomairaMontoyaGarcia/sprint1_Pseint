@@ -3,7 +3,7 @@ Algoritmo raiz_cuadrada
 	Escribir "Ingrese el numero : ";
 	leer num
 	variable<-	raiz(num);
-	Escribir " El resultado es ", variable;
+	Escribir " El resultado es : ", variable;
 	
 	
 	
