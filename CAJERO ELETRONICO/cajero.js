@@ -109,15 +109,14 @@ for (let index = 0; index < arrayBilletes.length; index++) {
     dinero: arrayBilletes[index].dinero,
     cantidad: cantidadBilletes,
   };
+
+  //4. Almacenar esta información en un array de objetos.
   arrayBilletesIngresados.push(billete);
   console.log(cantidadBilletes);
 }
 console.log("array de billetes", arrayBilletesIngresados);
 
-//4. Almacenar esta información en un array de objetos.
-
 //5. Una vez tenga la información, debe mostrar en consola la suma por cada denominación y el total general.
-
 //Calcular el total de dinero en caja
 let totalEnCaja = 0;
 arrayBilletesIngresados.forEach((billetes) => {
@@ -126,14 +125,29 @@ arrayBilletesIngresados.forEach((billetes) => {
 console.log("total de billetes ingresados", totalEnCaja);
 
 //6. Una vez el cajero esté cargado, debe volver a solicitar usuario y contraseña, si es administrador,
+
 //se repite el mismo proceso, sumar a la cantidad actual, si es cliente debe proseguir de la siguiente manera:
+
 
 //7. Si el cajero no tiene dinero cargado, debe aparecer un mensaje en consola: “Cajero en mantenimiento,
 //vuelva pronto.” Y reiniciar desde el inicio.
-const noDinero = prompt("Cajero en mantenimiento,vuelva pronto.");
+const cajaVacia ={}
+if (totalEnCaja === 0) {
+  console.log("Cajero en mantenimiento, vuelva pronto.");
+}
+console.log("")
 
-//8. Si el cajero ya tiene dinero cargado, debe preguntar la cantidad deseada a retirar. Una vez obtenida la
-//información, debe indicar cuánto dinero puede entregar basado en la cantidad disponible y los tipos de billetes.
+//8. Si el cajero ya tiene dinero cargado, debe preguntar la cantidad deseada a retirar.
+
+if (totalEnCaja >= 5000){
+ hayDinero = prompt("Bienvenido nuevamente, contamos con cupos, ¿Qué cantidad de dinero deseas retirar?.", totalEnCaja);
+
+}
+
+
+ //Una vez obtenida la información, debe indicar cuánto dinero puede entregar basado en la cantidad disponible y los tipos de billetes.
+
+
 //Luego debe mostrar en consola cuántos billetes de cada denominación entregó. Priorizando siempre las denominaciones
 //más altas para valores altos y redondeando a la cifra más cercana menor a la solicitada.
 
