@@ -1,0 +1,37 @@
+{
+  "compras": [
+    {
+      "id": 1,
+      "nameProduct": "banana",
+      "precio": 2000,
+      "cantidad": 1
+    },
+    {
+      "id": 2,
+      "nameProduct": "sopa",
+      "precio": 2000,
+      "cantidad": 1
+    },
+    {
+      "id": 3,
+      "nameProduct": "manzana",
+      "precio": 3000,
+      "cantidad": 1
+    },
+    {
+      "id": 4,
+      "title": "Esto es un nuevo objeto de post",
+      "author": "anita"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -39,7 +39,8 @@ const cajaRegistradora = (
         vuelto: [],
       };
     } else if (cambio < totalEnCaja) {
-      //Aquí pueden suceder dos cosas: 1. Que en caja exita suficiente dinero para devolver el cambio completo, o 2. Que en caja no haya sencillo para poder devolver el vuelto completo
+      //Aquí pueden suceder dos cosas: 1. Que en caja exita suficiente dinero para devolver el cambio completo, o 2. 
+      //Que en caja no haya sencillo para poder devolver el vuelto completo
       const arrayDeLasVueltas = [];
       let vueltas = cambio;
       arrayDineroEnCaja.forEach((element) => {
